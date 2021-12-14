@@ -1,6 +1,6 @@
 # API for using token from Remote Server in the AI Video Editor SDK
 
-Banuba token can be stored on Remote Server
+Banuba token can be stored on Remote Server. Follow the next steps to achieve remote token downloading
 
 ### Step 1
 
@@ -16,7 +16,7 @@ let remoteTokenProvider = RemoteTokenProvider(
 
 ### Step 2
 
-Create instance of ```RemoteTokenProvider``` and pass it to ``` VideoEditorTokenProvider```
+Pass your created instance to ```VideoEditorTokenProvider```
 
 ```swift
 
@@ -26,7 +26,7 @@ let provider = VideoEditorTokenProvider(tokenProvider: remoteTokenProvider)
 
 ### Step 3
 
-Below is an example of how you can use VideoEditorTokenProvider to load banuba_token and initialize VideoEditor SDK
+Use ```loadToken``` method of ```VideoEditorTokenProvider``` instance to load banuba_token and initialize VideoEditor SDK
 
 ```swift
 
@@ -43,9 +43,9 @@ provider.loadToken() { [weak self] (error, token) in
 
 ```
 
-### Step 3
+## Custom Token Provider
 
-You can create your custom TokenProvider class if your token is stored in any custom types of encryption 
+You can create your custom TokenProvider if you use any additional types of encryption for your token.
 
 Here is an example of TokenProvider class to get token from ```Data```
 
