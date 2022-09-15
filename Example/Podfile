@@ -6,7 +6,7 @@ use_frameworks!
 target 'Example' do
   pod 'BanubaARCloudSDK', '1.23.0' #optional
   pod 'BanubaVideoEditorSDK', '1.23.0'
-  pod 'BanubaAudioBrowserSDK', '1.23.0' #optional
+  pod 'BanubaAudioBrowserSDK', '1.23.1' #optional
   pod 'BanubaMusicEditorSDK', '1.23.0'
   pod 'BanubaOverlayEditorSDK', '1.23.0'
   pod 'BanubaSDKSimple', '1.23.0'
@@ -14,7 +14,7 @@ target 'Example' do
   pod 'BanubaSDK', '1.23.0'
   pod 'BanubaSDKServicing', '1.23.0'
   pod 'VideoEditor', '1.23.0'
-  pod 'BanubaUtilities', '1.23.0'
+  pod 'BanubaUtilities', '1.23.1'
   pod 'BanubaVideoEditorGallerySDK', '1.23.0' #optional
   pod 'BanubaVideoEditorTrimSDK', '1.23.0'
   pod 'BanubaLicenseServicingSDK', '1.23.0'
