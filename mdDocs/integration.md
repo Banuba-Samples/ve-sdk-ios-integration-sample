@@ -26,7 +26,6 @@
 - [Dependencies](#Dependencies)
 - [SDKs size](#SDKs-size)
 - [Supported media formats](#Supported-media-formats)
-- [Token](#Token)
 - [Passing Apple Store review](#Passing-Apple-Store-review)
 - [Connecting with AR cloud](#Connecting-with-AR-cloud)
 - [What can you customize?](#What-can-you-customize)
@@ -141,11 +140,6 @@ See the **default bitrate (kbps)** for exported video (without audio) in the tab
 | 360p(360 x 640) | 480p(480 x 854) | 540p(540 x 960) | HD(720 x 1280) | FHD(1080 x 1920) |
 | --------------- | --------------- | ---------------- | -------------- | ---------------- |
 |              800|             2000|              2000|            4000|              6400|
-
-## Token
-We offer a free 14-days trial for you could thoroughly test and assess Video Editor SDK functionality in your app. To get access to your trial, please, get in touch with us by [filling a form](https://www.banuba.com/video-editor-sdk) on our website. Our sales managers will send you the trial token.
-
-After receiving a token you can [initialize BanubaVideoEditor](../Example/Example/ViewController.swift#L86) with this token.
 
 ## Passing Apple Store review
 Unfortunately Apple Store may reject your app due to use of TrueDepth API.  

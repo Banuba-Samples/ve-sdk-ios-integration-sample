@@ -9,26 +9,25 @@ These are the answers to the most common questions asked about our SDK.
 6. [I want to enabled slideshow animation.](#6-i-want-to-enable-slideshow-animation)
 7. [I want to change cursor color.](#7-i-want-to-change-cursor-color)
 8. [I want to change progress bar position.](#8-i-want-to-change-progress-bar-position)
-9. [How does video editor work when token expires?](#9-how-does-video-editor-work-when-token-expires)
-10. [Which buttons available if Face AR disabled?](#10-which-buttons-available-if-face-ar-disabled)
-11. [I want to change music button position.](#11-i-want-to-change-music-button-position)
-12. [How can I get a track name of the audio used in my video after export?](#12-how-can-i-get-a-track-name-of-the-audio-used-in-my-video-after-export)
-13. [I want to change the font.](#13-i-want-to-change-the-font)
-14. [I want to check whether my token is expired.](#14-i-want-to-check-whether-my-token-is-expired)
-15. [The file “luts” couldn’t be opened because there is no such file.](#15-the-file-luts-couldnt-be-opened-because-there-is-no-such-file)
-16. [I want to add audio filters.](#16-i-want-to-add-audio-filters)
-17. [I want to change icons and name for effects.](#17-i-want-to-change-icons-and-name-for-effects)
-18. [I want to turn off Drafts feature.](#18-i-want-to-turn-off-drafts-feature)
-19. [I want to turn off Cover screen.](#19-i-want-to-turn-off-cover-screen)
-20. [I want to change visible tabs in gallery.](#20-i-want-to-change-visible-tabs-in-gallery)
-21. [I want to get exported video metadata.](#21-i-want-to-get-exported-video-metadata)
-22. [I want to change codec type from h264 to h265.](#22-i-want-to-change-codec-type-from-h264-to-h265)
-23. [How do I specify the video file saving directory?](#23-how-do-i-specify-the-video-file-saving-directory)
-24. [How do I change the video duration?](#24-how-do-i-change-the-video-duration)
-25. [The problem of using optional frameworks and bitcode together.](#25-the-problem-of-using-optional-frameworks-and-bitcode-together)
-26. [How do I change the launguage (how do I add new locale support)?](#26-how-do-i-change-the-launguage-how-do-i-add-new-locale-support)
-27. [How can I change the extension of the exported video?](#27-how-can-i-change-the-extension-of-the-exported-video)
-28. [How to set buttons for video modes?](#28-how-to-set-buttons-for-video-modes)
+9. [Which buttons available if Face AR disabled?](#9-which-buttons-available-if-face-ar-disabled)
+10. [I want to change music button position.](#11-i-want-to-change-music-button-position)
+11. [How can I get a track name of the audio used in my video after export?](#12-how-can-i-get-a-track-name-of-the-audio-used-in-my-video-after-export)
+12. [I want to change the font.](#13-i-want-to-change-the-font)
+13. [I want to check whether my token is expired.](#14-i-want-to-check-whether-my-token-is-expired)
+14. [The file “luts” couldn’t be opened because there is no such file.](#15-the-file-luts-couldnt-be-opened-because-there-is-no-such-file)
+15. [I want to add audio filters.](#16-i-want-to-add-audio-filters)
+16. [I want to change icons and name for effects.](#17-i-want-to-change-icons-and-name-for-effects)
+17. [I want to turn off Drafts feature.](#18-i-want-to-turn-off-drafts-feature)
+18. [I want to turn off Cover screen.](#19-i-want-to-turn-off-cover-screen)
+19. [I want to change visible tabs in gallery.](#20-i-want-to-change-visible-tabs-in-gallery)
+20. [I want to get exported video metadata.](#21-i-want-to-get-exported-video-metadata)
+21. [I want to change codec type from h264 to h265.](#22-i-want-to-change-codec-type-from-h264-to-h265)
+22. [How do I specify the video file saving directory?](#23-how-do-i-specify-the-video-file-saving-directory)
+23. [How do I change the video duration?](#24-how-do-i-change-the-video-duration)
+24. [The problem of using optional frameworks and bitcode together.](#25-the-problem-of-using-optional-frameworks-and-bitcode-together)
+25. [How do I change the launguage (how do I add new locale support)?](#26-how-do-i-change-the-launguage-how-do-i-add-new-locale-support)
+26. [How can I change the extension of the exported video?](#27-how-can-i-change-the-extension-of-the-exported-video)
+27. [How to set buttons for video modes?](#28-how-to-set-buttons-for-video-modes)
 
 ### 1. How do I start/stop recording with a tap?
   
@@ -160,19 +159,8 @@ let config = VideoEditorConfig()
 config.recorderConfiguration.progressBarPosition = .top
 ```
 
-### 9. How does video editor work when token expires?
-
-[Token](https://github.com/Banuba/ve-sdk-android-integration-sample#token) provided by sales managers has an expiration term to protect Video Editor SDK from malicious access. When the token expires the following happens:
- - video resolution will be lowered to 360p on camera, after trimmer and after export
- - Banuba watermark is applied to every exported video
-
- Also [FaceAR SDK](https://docs.banuba.com/face-ar-sdk/overview/token_management) you may expect the following actions if the token expires:
- - on the first expired month a watermark with "Powered by Banuba" label will be added on the top of both recorded and exported videos
- - after the first month the camera screen will be blurred and a full-screen watermark will be displayed
-
- Please keep your licence up to date to avoid unwanted behavior.
  
- ### 10. Which buttons available if Face AR disabled?
+ ### 9. Which buttons available if Face AR disabled?
  
  AdditionalEffectsButtons contains options set which describes buttons identifiers. 
  
