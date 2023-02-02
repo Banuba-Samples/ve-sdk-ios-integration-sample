@@ -20,8 +20,6 @@ Banuba Video Editor SDK lets you add video editing capabilities and AR effects t
 Feel free to [contact us](https://www.banuba.com/faq/kb-tickets/new) if you have any questions.
 
 ### Start SDK
-:exclamation: __The token **IS REQUIRED** to run sample and an integration in your app.__
-
 1. Clone the repository
 2. Install CocoaPods dependencies. Open **Example** directory ```cd Example``` and run ```pod install``` in terminal.
 3. Open the project in XCode
